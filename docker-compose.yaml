@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+    php:
+        image: wordpress:latest
+        volumes:
+            - ./:/var/www/html
+
+        ports:
+            - "8000:80"
+        restart: always
